@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework COSTAR - Prompt Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-costar { background: linear-gradient(135deg, #4B0082 0%, #6B21A8 50%, #8B5CF6 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 via-white to-violet-50 min-h-screen">
+    
+    <header class="gradient-costar text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-4">
+                <a href="index.html" class="inline-flex items-center text-white/80 hover:text-white transition">← Retour au comparatif</a>
+            </div>
+            <h1 class="text-6xl font-black mb-4">Framework CO-STAR</h1>
+            <p class="text-xl opacity-90">Extrêmement détaillé ; réduit drastiquement les hallucinations</p>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-purple-700">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-purple-800 font-bold text-lg">📚 Frameworks</a>
+                <div class="hidden md:flex space-x-1">
+                    <a href="race.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RACE</a>
+                    <a href="risen.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RISEN</a>
+                    <a href="care.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">CARE</a>
+                    <a href="rtf.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RTF</a>
+                    <a href="aspect.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">ASPECT</a>
+                    <a href="costar.html" class="px-4 py-2 rounded-lg bg-purple-100 text-purple-800 font-medium">COSTAR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <section class="glass-card rounded-3xl p-8 md:p-12 shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-purple-800 mb-6">Vue d'ensemble</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
+                    <h3 class="font-bold text-green-800 mb-3 flex items-center"><span class="text-2xl mr-2">✅</span> Forces</h3>
+                    <p class="text-gray-700">Extrêmement détaillé ; réduit drastiquement les hallucinations.</p>
+                </div>
+                <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
+                    <h3 class="font-bold text-red-800 mb-3 flex items-center"><span class="text-2xl mr-2">⚠️</span> Faiblesses</h3>
+                    <p class="text-gray-700">Long à rédiger ; peut être redondant pour des tâches simples.</p>
+                </div>
+                <div class="bg-purple-100 rounded-xl p-6 border-l-4 border-purple-700">
+                    <h3 class="font-bold text-purple-900 mb-3 flex items-center"><span class="text-2xl mr-2">🎯</span> Idéal pour</h3>
+                    <p class="text-gray-700">Travail à fort enjeu, contenu marketing complexe.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold text-purple-800 mb-8 text-center">Les 6 composants de CO-STAR</h2>
+            <div class="space-y-6">
+                
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-purple-700">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-purple-700 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">C</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-purple-800 mb-3">Context - Contexte</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Fournit les informations de fond essentielles pour situer l'IA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-violet-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-violet-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">O</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-violet-700 mb-3">Objective - Objectif</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Définit précisément la tâche finale à accomplir pour éviter la dérive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-indigo-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-indigo-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">S</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-indigo-700 mb-3">Style</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Détermine la "patte" rédactionnelle (ex: académique, business, narratif).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-blue-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">T</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-3">Tone - Ton</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Fixe l'émotion ou l'attitude (ex: empathique, humoristique, neutre).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-cyan-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-cyan-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">A</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-cyan-700 mb-3">Audience - Public</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Identifie la cible pour adapter le niveau de langage et les références.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-teal-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-teal-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">R</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-teal-700 mb-3">Response - Réponse</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Spécifie le format de sortie (JSON, Markdown) et les contraintes de taille.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-12 glass-card rounded-3xl p-8 md:p-12 shadow-xl bg-gradient-to-br from-purple-50 to-violet-50">
+            <h2 class="text-3xl font-bold text-purple-800 mb-6 flex items-center"><span class="text-4xl mr-3">💡</span> Exemple d'utilisation</h2>
+            <div class="bg-white rounded-xl p-6 border-l-4 border-purple-700">
+                <p class="text-gray-800 leading-relaxed">
+                    <strong class="text-purple-800">Context :</strong> "Notre startup SaaS B2B lance une nouvelle fonctionnalité d'automatisation de facturation. Nous ciblons les PME dans le secteur du conseil."<br><br>
+                    <strong class="text-violet-700">Objective :</strong> "Rédige un article de blog pour annoncer cette fonctionnalité et expliquer ses bénéfices concrets."<br><br>
+                    <strong class="text-indigo-700">Style :</strong> "Business décontracté, pédagogique, avec des exemples pratiques. Comme un article de blog HubSpot ou Intercom."<br><br>
+                    <strong class="text-blue-700">Tone :</strong> "Enthousiaste mais crédible, pas de survente. Empathique envers les problèmes de gestion administrative."<br><br>
+                    <strong class="text-cyan-700">Audience :</strong> "Dirigeants de PME (5-50 employés), souvent non-techniques, qui passent trop de temps sur la facturation manuelle."<br><br>
+                    <strong class="text-teal-700">Response :</strong> "Article de 800-1000 mots en Markdown. Structure : accroche, problème, solution, 3 bénéfices concrets avec exemples, appel à l'action."
+                </p>
+            </div>
+        </section>
+
+        <section class="mt-12 bg-gradient-to-r from-purple-100 to-violet-100 rounded-3xl p-8 border-l-4 border-purple-700">
+            <h3 class="text-2xl font-bold text-purple-800 mb-4">🌟 Pourquoi CO-STAR est le plus complet</h3>
+            <p class="text-gray-700 mb-4">
+                CO-STAR combine tous les éléments des autres frameworks en un seul modèle exhaustif. 
+                C'est le choix idéal pour des projets à haute valeur où la précision est critique.
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-4">
+                    <h4 class="font-bold text-purple-700 mb-2">✓ Contexte riche</h4>
+                    <p class="text-sm text-gray-600">Comme RACE et CARE</p>
+                </div>
+                <div class="bg-white rounded-xl p-4">
+                    <h4 class="font-bold text-violet-700 mb-2">✓ Objectif clair</h4>
+                    <p class="text-sm text-gray-600">Comme RISEN</p>
+                </div>
+                <div class="bg-white rounded-xl p-4">
+                    <h4 class="font-bold text-indigo-700 mb-2">✓ Contrôle stylistique</h4>
+                    <p class="text-sm text-gray-600">Unique à CO-STAR</p>
+                </div>
+                <div class="bg-white rounded-xl p-4">
+                    <h4 class="font-bold text-blue-700 mb-2">✓ Format précis</h4>
+                    <p class="text-sm text-gray-600">Comme RTF et ASPECT</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 flex justify-between items-center">
+            <a href="aspect.html" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300 transition">← ASPECT</a>
+            <a href="index.html" class="px-6 py-3 bg-purple-700 text-white rounded-full font-semibold hover:bg-purple-800 transition">Retour au comparatif</a>
+        </section>
+
+    </main>
+
+    <footer class="gradient-costar text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="opacity-75">Framework CO-STAR - Guide Prompt Engineering</p>
+            <p class="mt-4 text-sm opacity-60">Le framework le plus complet pour des résultats de haute qualité</p>
+        </div>
+    </footer>
+
+</body>
+</html>

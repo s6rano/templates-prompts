@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework RTF - Prompt Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-rtf { background: linear-gradient(135deg, #0D9488 0%, #14B8A6 50%, #2DD4BF 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-teal-50 via-white to-cyan-50 min-h-screen">
+    
+    <header class="gradient-rtf text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-4">
+                <a href="index.html" class="inline-flex items-center text-white/80 hover:text-white transition">← Retour au comparatif</a>
+            </div>
+            <h1 class="text-6xl font-black mb-4">Framework RTF</h1>
+            <p class="text-xl opacity-90">Ultra-rapide ; efficace pour les sorties structurées</p>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-teal-600">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-teal-700 font-bold text-lg">📚 Frameworks</a>
+                <div class="hidden md:flex space-x-1">
+                    <a href="race.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RACE</a>
+                    <a href="risen.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RISEN</a>
+                    <a href="care.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">CARE</a>
+                    <a href="rtf.html" class="px-4 py-2 rounded-lg bg-teal-50 text-teal-700 font-medium">RTF</a>
+                    <a href="aspect.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">ASPECT</a>
+                    <a href="costar.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">COSTAR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <section class="glass-card rounded-3xl p-8 md:p-12 shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-teal-700 mb-6">Vue d'ensemble</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
+                    <h3 class="font-bold text-green-800 mb-3 flex items-center"><span class="text-2xl mr-2">✅</span> Forces</h3>
+                    <p class="text-gray-700">Ultra-rapide ; efficace pour les sorties structurées (tableaux, listes).</p>
+                </div>
+                <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
+                    <h3 class="font-bold text-red-800 mb-3 flex items-center"><span class="text-2xl mr-2">⚠️</span> Faiblesses</h3>
+                    <p class="text-gray-700">Trop basique pour des nuances de ton ou de contexte complexe.</p>
+                </div>
+                <div class="bg-teal-50 rounded-xl p-6 border-l-4 border-teal-500">
+                    <h3 class="font-bold text-teal-800 mb-3 flex items-center"><span class="text-2xl mr-2">🎯</span> Idéal pour</h3>
+                    <p class="text-gray-700">Extractions de données, formatage, questions simples.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold text-teal-700 mb-8 text-center">Les 3 composants de RTF</h2>
+            <div class="space-y-6">
+                
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-teal-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-teal-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">R</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-teal-700 mb-3">Role - Rôle</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Donne une identité rapide à l'IA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-cyan-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-cyan-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">T</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-cyan-600 mb-3">Task - Tâche</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Définit l'action sans fioritures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-emerald-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">F</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-emerald-600 mb-3">Format</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">Impose la structure de sortie (ex: Liste à puces, Tableau HTML).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-12 glass-card rounded-3xl p-8 md:p-12 shadow-xl bg-gradient-to-br from-teal-50 to-cyan-50">
+            <h2 class="text-3xl font-bold text-teal-700 mb-6 flex items-center"><span class="text-4xl mr-3">💡</span> Exemple d'utilisation</h2>
+            <div class="bg-white rounded-xl p-6 border-l-4 border-teal-600">
+                <p class="text-gray-800 leading-relaxed">
+                    <strong class="text-teal-700">Role :</strong> "Tu es un analyste de données."<br><br>
+                    <strong class="text-cyan-600">Task :</strong> "Liste les 5 principales langues parlées en Europe avec leur nombre de locuteurs natifs."<br><br>
+                    <strong class="text-emerald-600">Format :</strong> "Tableau Markdown avec 3 colonnes : Rang | Langue | Nombre de locuteurs (millions)."
+                </p>
+            </div>
+            <div class="mt-6 bg-gray-50 rounded-xl p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-700 mb-3">Résultat attendu :</h3>
+                <pre class="text-sm text-gray-800 overflow-x-auto">
+| Rang | Langue    | Nombre de locuteurs (millions) |
+|------|-----------|-------------------------------|
+| 1    | Russe     | 150                           |
+| 2    | Allemand  | 95                            |
+| 3    | Français  | 80                            |
+| 4    | Anglais   | 70                            |
+| 5    | Italien   | 65                            |
+                </pre>
+            </div>
+        </section>
+
+        <section class="mt-12 flex justify-between items-center">
+            <a href="care.html" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300 transition">← CARE</a>
+            <a href="aspect.html" class="px-6 py-3 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition">Framework suivant : ASPECT →</a>
+        </section>
+
+    </main>
+
+    <footer class="gradient-rtf text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="opacity-75">Framework RTF - Guide Prompt Engineering</p>
+        </div>
+    </footer>
+
+</body>
+</html>

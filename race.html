@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework RACE - Prompt Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cefora-purple': '#4B0082',
+                        'cefora-violet': '#6B21A8',
+                        'cefora-light': '#FFF8F0',
+                        'cefora-orange': '#FF4500',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-race {
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 50%, #60A5FA 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-cyan-50 min-h-screen">
+    
+    <!-- Header -->
+    <header class="gradient-race text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-4">
+                <a href="index.html" class="inline-flex items-center text-white/80 hover:text-white transition">
+                    ← Retour au comparatif
+                </a>
+            </div>
+            <h1 class="text-6xl font-black mb-4">Framework RACE</h1>
+            <p class="text-xl opacity-90">Simple à mémoriser ; équilibre parfait entre rapidité et contexte</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-blue-600">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-blue-700 font-bold text-lg">📚 Frameworks</a>
+                <div class="hidden md:flex space-x-1">
+                    <a href="race.html" class="px-4 py-2 rounded-lg bg-blue-50 text-blue-700 font-medium">RACE</a>
+                    <a href="risen.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RISEN</a>
+                    <a href="care.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">CARE</a>
+                    <a href="rtf.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">RTF</a>
+                    <a href="aspect.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">ASPECT</a>
+                    <a href="costar.html" class="px-4 py-2 rounded-lg hover:bg-purple-50 transition text-gray-700">COSTAR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <!-- Overview -->
+        <section class="glass-card rounded-3xl p-8 md:p-12 shadow-xl mb-12">
+            <h2 class="text-4xl font-bold text-blue-700 mb-6">Vue d'ensemble</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-500">
+                    <h3 class="font-bold text-green-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">✅</span> Forces
+                    </h3>
+                    <p class="text-gray-700">Simple à mémoriser ; équilibre parfait entre rapidité et contexte.</p>
+                </div>
+                
+                <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
+                    <h3 class="font-bold text-red-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">⚠️</span> Faiblesses
+                    </h3>
+                    <p class="text-gray-700">Manque de précision pour des sorties créatives ou très longues.</p>
+                </div>
+                
+                <div class="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500">
+                    <h3 class="font-bold text-blue-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">🎯</span> Idéal pour
+                    </h3>
+                    <p class="text-gray-700">Communication pro (emails, synthèses), usage quotidien.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Framework Components -->
+        <section>
+            <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Les 4 composants de RACE</h2>
+            
+            <div class="space-y-6">
+                
+                <!-- R - Role -->
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-blue-600">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">
+                            R
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-3">Role - Rôle</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Définit qui est l'IA au moment de répondre (ex: Rédacteur Web).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A - Action -->
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-cyan-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-cyan-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">
+                            A
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-cyan-600 mb-3">Action</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Indique la tâche concrète à réaliser immédiatement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C - Context -->
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-sky-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-sky-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">
+                            C
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-sky-600 mb-3">Context - Contexte</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Apporte les données nécessaires pour que l'IA comprenne l'environnement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E - Expectation -->
+                <div class="glass-card rounded-2xl p-8 border-l-4 border-indigo-500">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-16 h-16 bg-indigo-500 text-white rounded-2xl flex items-center justify-center text-3xl font-black mr-6">
+                            E
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-3">Expectation - Attentes</h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Précise le résultat attendu et les normes de qualité à respecter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Example -->
+        <section class="mt-12 glass-card rounded-3xl p-8 md:p-12 shadow-xl bg-gradient-to-br from-blue-50 to-cyan-50">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6 flex items-center">
+                <span class="text-4xl mr-3">💡</span> Exemple d'utilisation
+            </h2>
+            <div class="bg-white rounded-xl p-6 border-l-4 border-blue-600">
+                <p class="text-gray-800 leading-relaxed">
+                    <strong class="text-blue-700">Role :</strong> "Tu es un expert en communication professionnelle."<br><br>
+                    <strong class="text-cyan-600">Action :</strong> "Rédige un email de relance."<br><br>
+                    <strong class="text-sky-600">Context :</strong> "J'ai envoyé une proposition commerciale il y a 2 semaines à un prospect intéressé par nos services de formation."<br><br>
+                    <strong class="text-indigo-600">Expectation :</strong> "L'email doit être courtois, professionnel, rappeler brièvement notre offre et proposer un créneau pour un appel. Maximum 150 mots."
+                </p>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="mt-12 flex justify-between items-center">
+            <a href="index.html" class="px-6 py-3 bg-gray-200 text-gray-700 rounded-full font-semibold hover:bg-gray-300 transition">
+                ← Comparatif
+            </a>
+            <a href="risen.html" class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition">
+                Framework suivant : RISEN →
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-race text-white py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="opacity-75">Framework RACE - Guide Prompt Engineering</p>
+        </div>
+    </footer>
+
+</body>
+</html>
